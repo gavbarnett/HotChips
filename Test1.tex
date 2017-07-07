@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{blindtext}
 \usepackage[utf8]{inputenc}
- 
+
 \title{Hot Chips}
 \author{Gavin Barnett}
 \date{\today}
@@ -17,11 +17,20 @@ Background research on high temperatures on electronic devices.
 
 \tableofcontents
 
+\newpage
+
 \section{Introduction}
 
 \section{Leakage Currents}
+In capacitors the "leakage current" is a small amount of current which flows across the dielectric material. This can also be expressed as a large shunt resistance known as "insulation resistance".
+\subsection{Dielectric Absorption Currents}
+This is the current required to align the dipoles with the dielectric.
+\subsection{Quantum Tunnel Effects}
+\cite{Entner}
 
-\section{Noise}
+\subsubsection{Fowler-Nordheim Tunnelling}
+\subsubsection{Trap-assisted Fowler-Nordheim Tunnelling}
+\section{Johnson–Nyquist noise}
 
 \section{Dopant's}
 
@@ -40,8 +49,10 @@ Background research on high temperatures on electronic devices.
 
 
 \begin{thebibliography}{1}
-\bibitem{mycitation}Author, ``Title'', Journal \textbf{Volume},
-page\textendash numbers (year).
+\bibitem{Entner} 
+Robert Entner: Modeling and Simulation of 
+Negative Bias Temperature Instability,
+\\\texttt{http://www.iue.tuwien.ac.at/phd/entner/diss.html}
 \end{thebibliography}
 
 \end{document}
