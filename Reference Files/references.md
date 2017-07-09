@@ -6,6 +6,11 @@
 [THE INFLUENCE OF TEMPERATURE ON MICROELECTRONIC DEVICE FAILURE MECHANISMS](http://www.dtic.mil/dtic/tr/fulltext/u2/a275029.pdf)
 
 [Failure of electronic components](https://en.wikipedia.org/wiki/Failure_of_electronic_components)
+
+[Analog High Temperature Electronic Pose Design Challenges](http://www.analog.com/en/analog-dialogue/articles/high-temperature-electronic-pose-design-challenges.html)
+
+[JPL Microelectronics Reliability: Physics-of-Failure Based Modeling and Lifetime Evaluation ](https://nepp.nasa.gov/files/16365/08_102_4_%20JPL_White.pdf)
+
 ## Capacitors
 [Thermal stress capacitors failure pervention](http://www.ee.co.za/article/thermal-stress-capacitors-failure-prevention.html)
 

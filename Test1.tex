@@ -1,6 +1,10 @@
 \documentclass{article}
 \usepackage{blindtext}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\graphicspath{ {Images/} }
+\usepackage{biblatex}
+\addbibresource{Test1.bib}
 
 \title{Hot Chips}
 \author{Gavin Barnett}
@@ -8,12 +12,19 @@
 
 \begin{document}
 \maketitle
-
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=2.3]{Hot-chips-Getty}
+		\caption{Hot-Chips}
+	\end{figure}
 \begin{abstract}
-Background research on high temperatures on electronic devices.
+Random readings and rambling on the effects of high temperatures on electronic devices. 
+Also getting use to using LaTeX.
 
 \end{abstract}
 \maketitle
+
+\newpage
 
 \tableofcontents
 
@@ -21,38 +32,67 @@ Background research on high temperatures on electronic devices.
 
 \section{Introduction}
 
-\section{Leakage Currents}
+\newpage
+
+
+\section{Packaging Considerations}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=1]{Package_Breakdown}
+		\caption{Packaging}
+		\label{fig:packaging}
+	\end{figure}
+	
+	
+\subsection{Silicon}
+	\subsubsection{Crystalline structure failure}
+	\subsubsection{Hot Carrier Injection (HCI)}
+	\subsubsection{Negative Bias Temperature Instability (NBTI)}
+	
+\subsection{Die Attach}
+	\subsubsection{Coefficient of Thermal Expansion(CTE)}
+	
+\subsection{Wire Bond/ Bond-Pad Metallization}
+	\subsubsection{Inter-Metallic Compound (IMC) Growth}
+	\subsubsection{Diffusion (Kirkendall Effect)}
+	\subsubsection{Corrosion}
+	
+\subsection{Package}
+	\subsubsection{Glass-Transition Temperature (Tg)}
+	\subsubsection{Coefficient of Thermal Expansion(CTE)}
+	\subsubsection{Hermetic Ceramic Packages}
+	\subsubsection{High-Temperature Multichip Modules}
+	
+\subsection{Pins}
+	\subsubsection{Through Hole}
+	\subsection{Gull-Wing SMT}
+	\subsubsection{BGA}
+	
+\subsection{Pin Solder Integrity}
+	\subsubsection{Solder Alloys}
+	\subsubsection{High Melting Point (HMP) alloys}
+	
+\subsection{PCB Traces}
+	\subsubsection{Tin-whiskers}
+	\subsubsection{Flux residue}
+	
+\subsection{PCB-Thermal Integrity}
+	\subsubsection{Glass Transition Temperature (Tg)}
+	\subsubsection{De-lamination}
+	\subsubsection{Moisture Absorption}
+	
+\newpage
+
+\section{Fault Phenomenon}
+\subsection{Leakage Currents}
 In capacitors the "leakage current" is a small amount of current which flows across the dielectric material. This can also be expressed as a large shunt resistance known as "insulation resistance".
-\subsection{Dielectric Absorption Currents}
+\subsubsection{Dielectric Absorption Currents}
 This is the current required to align the dipoles with the dielectric.
-\subsection{Quantum Tunnel Effects}
-\cite{Entner}
-
-\subsubsection{Fowler-Nordheim Tunnelling}
-\subsubsection{Trap-assisted Fowler-Nordheim Tunnelling}
-\section{Johnson–Nyquist noise}
-
-\section{Dopant's}
-
-\section{Crystalline structure failure}
-
-\section{Band-gap}
-
-\section{Hot Carrier Injection (HCI)}
-
-\section{Negative Bias Temperature Instability (NBTI)}
-
-\section{Packaging}
-\subsection{Bonding Wire}
-\subsection{Potting}
-\subsection{Hermetic Ceramic Packages}
+\subsubsection{Quantum Tunnel Effects}
 
 
-\begin{thebibliography}{1}
-\bibitem{Entner} 
-Robert Entner: Modeling and Simulation of 
-Negative Bias Temperature Instability,
-\\\texttt{http://www.iue.tuwien.ac.at/phd/entner/diss.html}
-\end{thebibliography}
+\newpage
+
+\printbibliography
 
 \end{document}
