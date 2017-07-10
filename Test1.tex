@@ -2,6 +2,7 @@
 \usepackage{blindtext}
 \usepackage{graphicx}
 \usepackage{gensymb}
+\usepackage{array}
 \usepackage[utf8]{inputenc}
 \graphicspath{ {Images/} }
 \usepackage{biblatex}
@@ -77,13 +78,8 @@ Also getting use to using LaTeX.
 		Solder is a fusible metal alloy used to connect devices and wire to the PWA.
 		Typical melting points for solder are around 180-190\degree although this varies with solder alloy. 
 		For high temperature electronics it is important to consider the melting point of solder used, including that on BGA devices.
-		\subsubsection{Eutectic}
-		A material is said to be Eutectic if its melting point is the same as its freezing point. 
-		This can also be phrased has having the same liquidus (melting) and solidus (freezing) temperature.
-		
-		Non-eutectic alloys go through a cooling phase (or melting range) where solid particles are flowing within a liquid. Any movement of a cooling non-eutectic alloy in this "pasty state" can cause poor joints to form on the work piece.  		
-		\subsubsection{Solder Alloys}
-		% Ref: http://ostec-materials.ru/upload/iblock/714/71418246221db5e84a71e8973b38f94e.pdf
+				% Ref: http://ostec-materials.ru/upload/iblock/714/71418246221db5e84a71e8973b38f94e.pdf
+				
 		Solder is made of a a number of elements, typically these include:
 		\begin{itemize}
 			\item Tin (Sn)
@@ -97,13 +93,16 @@ Also getting use to using LaTeX.
 			\item Copper (Cu)
 		\end{itemize}
 		
+		\subsubsection{Eutectic}
+		A material is said to be Eutectic if its melting point is the same as its freezing point. 
+		This can also be phrased has having the same liquidus (melting) and solidus (freezing) temperature.
 		
-		\textbf{Tin/lead solder alloys}
-		 
-		 
+		Non-eutectic alloys go through a cooling phase (or melting range) where solid particles are flowing within a liquid. Any movement of a cooling non-eutectic alloy in this "pasty state" can cause poor joints to form on the work piece.  		
+	
+		\subsubsection{Tin/lead solder alloys}	 
 		 Typical melting point around 180\degree
 		\begin{center}
- 			\begin{tabular}{||c c c||} 
+ 			\begin{tabular}{| m{10em} | m{5em}| m{17em} | } 
  			\hline
  			\textbf{Composition} & \textbf{Melting Range} & \textbf{Description} \\ [0.5ex] 
  			\hline\hline
@@ -111,7 +110,7 @@ Also getting use to using LaTeX.
  			\hline
  			60Sn/40Pb & 183-188\degree & Classic solder \\
  			\hline
- 			62Sn/36Pb/2Ag & 179\degree & Very Common and strongest tin/lead solder \\
+ 			62Sn/36Pb/2Ag & 179\degree & Very common and strongest tin/lead solder \\
  			\hline
  			90Pb/10Sn & 275-302\degree & Increased lead increases melting point \\
  			\hline
@@ -120,21 +119,36 @@ Also getting use to using LaTeX.
 			\end{tabular}
 		\end{center}
 The higher temperature, higher lead content solders where used internally within devices to prevent re-flow during PWA assembly.
+				
+		\subsubsection{Lead-free solder alloys}
+		These are typically made up of the SAC alloys Tin (Sn) / Silver (Ag) /Copper (Cu) and are mostly eutectic. 
+		Although at high temperatures they tend to dissolve copper. 
+		As such the process must be well controlled adding SN/Ag as required.
+				
+		An alternative alloy of Tin (Sn) / Bismuth (Bi) / Silver (Ag) may be better for wetting and fatigue resistance than SAC.
+		Although if combined with lead (Pb) from any devices it can form a lead alloy with melting points as low as 96\degree , which is highly problematic.
+		 \begin{center}
+ 			\begin{tabular}{| m{10em} | m{5em}| m{17em} |} 
+ 			\hline
+ 			\textbf{Composition} & \textbf{Melting Range} & \textbf{Description} \\ [0.5ex] 
+ 			\hline\hline
+ 			96.5Sn/3.0Ag/0.5Cu & 217-220\degree & Near eutectic. It is the JEITA recommended alloy for wave and reflow soldering \\ 
+ 			\hline
+ 			95.6Sn/3.5Ag/0.9Cu & 217\degree & Eutectic. \\ 
+ 			\hline
+ 			91.8Sn/4.8Bi/3.4Ag & 211-213\degree & Do not use on lead-containing assemblies \\
+ 			\hline
+ 			57Bi/42Sn/1Ag & 137-139\degree & Low melting point. Do not use on lead-containing assemblies  \\
+ 			\hline
+			\end{tabular}
+		\end{center}
+		
+		\subsubsection{Low-temperature alloys}
+		
+		\subsubsection{High-temperature solder alloys}
 		
 		
-		\textbf{Lead-free solder alloys}
-		
-		
-		These typically are made up of the SAC alloys Tin (Sn) / Silver (Ag) /Copper (Cu) and are mostly eutectic.
-		 
-		
-		\textbf{Low-temperature alloys}
-		
-		
-		\textbf{High-temperature solder alloys}
-		
-		
-		\textbf{Indium-lead for thick gold metallizations}
+		\subsubsection{Indium-lead for thick gold metallizations}
 		
 		
 		\subsubsection{High Melting Point (HMP) alloys}
